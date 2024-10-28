@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+   :root {
+
+
+      --primary: 0, 0%, 0%;
+      /* Black */
+      --secondary: 0, 1%, 10%;
+      /* shade of black */
+      --accent1: 37, 98%, 53%;
+      /* Orange */
+      --accent2: 0, 0%, 90%;
+      /* Light Gray */
+      --accent3: 0, 0%, 100%;
+      /* White */
+      --accent4: 0, 0%, 53%;
+      /* gray */
+      /* --accent4: 300, 78%, 55%; Pink */
+      /* --accent5: 180, 45%, 62%; Teal */
+      /* --accent6: 260, 57%, 52%; Purple */
+      --border: 0, 0%, 90%;
+      /* Light Gray */
+      --text: 0, 0%, 100%;
+      /* White */
+      --muted: 0, 0%, 70%;
+      /* Gray */
+
+      --destructive: 356, 98%, 58%;
+      /* Red */
+      --constructive: 150, 98%, 58%;
+      /* Green */
+      --skeleton: 0, 0%, 82%;
+      /* Light Gray */
+
+      --radius: 0.5rem;
+
+
+
+      --input: 240 5.9% 90%;
+      --ring: 240 10% 3.9%;
+      --chart-1: 12 76% 61%;
+      --chart-2: 173 58% 39%;
+      --chart-3: 197 37% 24%;
+      --chart-4: 43 74% 66%;
+      --chart-5: 27 87% 67%;
+      --radius: 0.5rem;
+   }
+
+
+}
+
+@layer base {
+   * {
+      @apply border-border;
+   }
+
+   body {
+      @apply bg-primary text-primary;
+   }
+}
