@@ -3,6 +3,7 @@ import { authHandler, initAuthConfig, verifyAuth } from "@hono/auth-js";
 import { handle } from "hono/vercel";
 import { getAuthConfig } from "@/lib/authConfig";
 
+export const runtime = "edge";
 const app = new Hono();
 
 app.use("*", initAuthConfig(getAuthConfig));

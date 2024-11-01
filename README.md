@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hono.js with NextAuth.js Integration
+
+This project demonstrates how to integrate **Hono.js** with **NextAuth.js** for authentication in a Next.js application. Hono.js serves as the backend, providing lightweight, high-performance API handling, while NextAuth.js manages secure authentication with various providers.
 
 ## Getting Started
 
-First, run the development server:
+###
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### 1. Project Setup
+
+```
+git clone https://github.com/Yash0z/Hono-NextAuth.git
+cd Hono-NextAuth
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Env configuration
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a .env.local file in the Next.js project root and configure environment variables for your authentication providers:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+AUTH_URL = ""
+AUTH_SECRET = ""
+GITHUB_ID = ""
+GITHUB_SECRET = ""
+AUTH_GOOGLE_ID = ""
+AUTH_GOOGLE_SECRET = ""
+```
 
-## Learn More
+You can add details for more providers (e.g. Apple, Twitter, Discord, Email, etc).
 
-To learn more about Next.js, take a look at the following resources:
+#
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Live Example
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+url : hono-next-auth-levf.vercel.app/
 
-## Deploy on Vercel
+#
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Thank You :>

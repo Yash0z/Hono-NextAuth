@@ -25,8 +25,8 @@ const Satoshi_B = localFont({
 //////////////////////////
 
 export const metadata: Metadata = {
-	title: "GeoTrack",
-	description: "geo-attendance",
+	title: "Auth",
+	description: "Auth",
 };
 
 export default function RootLayout({
